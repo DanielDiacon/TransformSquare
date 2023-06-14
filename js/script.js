@@ -6,7 +6,7 @@ const colorInput = document.getElementById('colorInput');
 const submitButton = document.getElementById('btn');
 
 const btnStyle = {
-   color: 'white',
+   color: 'black',
    width: '100px',
    height: '100px',
    transition: '1s',
@@ -35,7 +35,7 @@ submitButton.addEventListener('click', function () {
 
    //time transition
    btnStyle.time = timeInput.value;
-   if (timeInput.value == Nan) {
+   if (timeInput.value == "") {
       box.style.transition = btnStyle.transition;
    } else if (timeInput.value.includes("s")) {
       box.style.transition = btnStyle.time;
@@ -46,4 +46,5 @@ submitButton.addEventListener('click', function () {
    //color
    btnStyle.color = colorInput.value;
    box.style.backgroundColor = btnStyle.color;
+
 });
