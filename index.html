@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>JS</title>
+   <link rel="stylesheet" href="style.css">
+   <script defer src="js/script.js"></script>
+</head>
+
+<body>
+   <div id="box" class="box">
+   </div>
+
+   <div class="form">
+      <div class="row">
+         <label class="label" for="widthInput">Latimea patratului</label>
+         <input maxlength="3" placeholder="Widht" class="input" type="text" id="widthInput">
+      </div>
+      <div class="row">
+         <label class="label" for="heightInput">Inaltimea patratului</label>
+         <input maxlength="3" placeholder="Height" class="input" type="text" id="heightInput">
+      </div>
+      <div class="row">
+         <label class="label" for="timeInput">Time transition</label>
+         <input maxlength="2" placeholder="Standart 1s" class="input" type="text" id="timeInput">
+      </div>
+      <div class="row">
+         <label class="label" for="colorInput">Culoarea</label>
+         <select class="select" name="select" id="colorInput">
+            <option class="option" style="--colorSelect: red;" value="red">Red</option>
+            <option class="option" style="--colorSelect: orange;" value="orange">Orange</option>
+            <option class="option" style="--colorSelect: yellow;" value="yellow">Yellow</option>
+            <option class="option" style="--colorSelect: green;" value="green">Green</option>
+            <option class="option" style="--colorSelect: blue;" value="blue">Blue</option>
+            <option class="option" style="--colorSelect: purple;" value="purple">Purple</option>
+            <option class="option" style="--colorSelect: brown;" value="brown">Brown</option>
+         </select>
+      </div>
+      <input id="btn" class="btn" type="submit">
+   </div>
+</body>
+
+</html>
